@@ -9,6 +9,15 @@ import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.com
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
+import { DirectiveExampleComponent } from './directive-example/directive-example.component';
+import { BasicHighlightDirective } from './directive-example/directive/basic-highlight/basic-highlight.directive';
+import { BetterHighlightDirective } from './directive-example/directive/batter-highlight/better-highlight.directive';
+import { UnlessDirective } from './directive-example/directive/unless/unless.directive';
+import { DropdownDirective } from './shared/Directive/dropdown.directive';
+import { ServicesStartComponent } from './services-start/services-start.component';
+import { AccountComponent } from './services-start/account/account.component';
+import { NewAccountComponent } from './services-start/new-account/new-account.component';
+
 
 
 @NgModule({
@@ -21,6 +30,15 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
     RecipeItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
+    DirectiveExampleComponent,
+    BasicHighlightDirective,
+    BetterHighlightDirective,
+    UnlessDirective,
+    DropdownDirective,
+    ServicesStartComponent,
+    AccountComponent,
+    NewAccountComponent
+
 
   ],
   imports: [
