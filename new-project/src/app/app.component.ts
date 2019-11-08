@@ -6,9 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-
+  hasFoucs = false;
+  input2 = false;
   // currentMenu = 'recipe';
-  currentMenu = 'shopping';
+  // currentMenu = 'shopping';
+  currentMenu = 'other';
 
 
 
@@ -17,4 +19,8 @@ export class AppComponent {
 
     this.currentMenu = feature;
   }
+  test(event){
+    this.hasFoucs = true ;
+  }
+
 }

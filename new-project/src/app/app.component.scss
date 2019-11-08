@@ -1,0 +1,11 @@
+
+
+.testBox{
+  height:0; overflow: hidden;
+background: red;
+
+&.open{
+  height:100% !important;
+}
+}
+

@@ -17,6 +17,10 @@ import { DropdownDirective } from './shared/Directive/dropdown.directive';
 import { ServicesStartComponent } from './services-start/services-start.component';
 import { AccountComponent } from './services-start/account/account.component';
 import { NewAccountComponent } from './services-start/new-account/new-account.component';
+import { UserComponent } from './user/user.component';
+import { ActiveUsersComponent } from './user/active-users/active-users.component';
+import { InactiveUsersComponent } from './user/inactive-users/inactive-users.component';
+
 
 
 
@@ -37,7 +41,11 @@ import { NewAccountComponent } from './services-start/new-account/new-account.co
     DropdownDirective,
     ServicesStartComponent,
     AccountComponent,
-    NewAccountComponent
+    NewAccountComponent,
+    UserComponent,
+    ActiveUsersComponent,
+    InactiveUsersComponent
+
 
 
   ],

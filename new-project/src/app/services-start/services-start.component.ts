@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { AccountService } from '../shared/Service/account.service';
+import { LoggingService } from '../shared/Service/logging.service';
 
 @Component({
   selector: 'app-services-start',
   templateUrl: './services-start.component.html',
   styleUrls: ['./services-start.component.scss'],
-  providers: [AccountService]
+  providers: [AccountService, LoggingService]
 })
 export class ServicesStartComponent implements OnInit {
   accounts : {name: string, status: string}[] = [];
@@ -17,11 +18,5 @@ export class ServicesStartComponent implements OnInit {
   }
 
 
-  // onAccountAdded(newAccount: {name: string, status: string}) {
-  //   this.accounts.push(newAccount);
-  // }
 
-  // onStatusChanged(updateInfo: {id: number, newStatus: string}) {
-  //   this.accounts[updateInfo.id].status = updateInfo.newStatus;
-  // }
 }

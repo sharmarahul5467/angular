@@ -7,10 +7,14 @@
 <hr/>
 <div class="row">
   <div class="col-xs-12">
-    <app-recipe-item
+    <!-- <app-recipe-item
     *ngFor="let recipeList of recipes"
     [recipe]="recipeList"
     (currentRecipe)="viewRecipeList(recipeList)"
+    ></app-recipe-item> -->
+    <app-recipe-item
+    *ngFor="let recipeList of recipes"
+    [recipe]="recipeList"
     ></app-recipe-item>
   </div>
 </div>
