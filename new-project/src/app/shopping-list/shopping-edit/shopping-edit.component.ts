@@ -27,7 +27,7 @@ export class ShoppingEditComponent implements OnInit {
     const newIngredient = new Ingredient(ingName , ingAmount);
     this.ingredientAdded.emit(newIngredient);
 
-    this.loggingService.logStatusChange(ingName);
+    // this.loggingService.logStatusChange(ingName, ingAmount);
 
     // console.log(ingName);
     // console.log(ingAmount);
