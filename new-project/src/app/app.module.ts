@@ -20,6 +20,9 @@ import { NewAccountComponent } from './services-start/new-account/new-account.co
 import { UserComponent } from './user/user.component';
 import { ActiveUsersComponent } from './user/active-users/active-users.component';
 import { InactiveUsersComponent } from './user/inactive-users/inactive-users.component';
+import { ShoppingListService } from './shopping-list/shopping.service';
+import { RecipeService } from './recipes/recipe.service';
+
 
 
 
@@ -44,7 +47,8 @@ import { InactiveUsersComponent } from './user/inactive-users/inactive-users.com
     NewAccountComponent,
     UserComponent,
     ActiveUsersComponent,
-    InactiveUsersComponent
+    InactiveUsersComponent,
+
 
 
 
@@ -52,7 +56,7 @@ import { InactiveUsersComponent } from './user/inactive-users/inactive-users.com
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [ShoppingListService, RecipeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
