@@ -1,0 +1,131 @@
+<div class="container">
+  <h2>Bordered Table</h2>
+
+
+  <!-- <div class="customTable"></div>
+  <table class="table table-bordered" appTableOverflow  id="rahul">
+    <thead >
+      <tr>
+        <th colspan="2">Name</th>
+        <th colspan="2">address</th>
+        <th rowspan="2">Email</th>
+      </tr>
+      <tr>
+        <th>first name</th>
+        <th>last name</th>
+        <th>address</th>
+        <th>pin code</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let x of [0,0,0,0]">
+        <td>John</td>
+        <td>Doe</td>
+        <td>sec 11 avc colony</td>
+        <td>agra </td>
+        <td>john@example.com</td>
+      </tr>
+
+    </tbody>
+  </table> -->
+
+  <div class="">
+    <table class="table table-fixed">
+      <thead>
+        <tr>
+          <th class="col-1">#</th>
+          <th class="col-2">First</th>
+          <th class="col-2">Last</th>
+          <th class="col-2">Handle</th>
+          <th class="col-2">Handle</th>
+          <th class="col-2">Handle</th>
+          <th class="col-2">Handle</th>
+        </tr>
+      </thead>
+      <tbody (scroll)="tableBodyScroll($event)">
+        <tr *ngFor="let item of [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]">
+          <th class="col-1">1</th>
+          <td class="col-2">Mark</td>
+          <td class="col-2">Otto</td>
+          <td class="col-2">@mdo</td>
+          <td class="col-2">@mdo</td>
+          <td class="col-2">@mdo</td>
+          <td class="col-2">@mdo</td>
+        </tr>
+      </tbody>
+      <!-- <tfoot (scroll)="tableBodyScroll($event)">
+        <tr>
+          <th class="col-1">#</th>
+          <th class="col-2">First</th>
+          <th class="col-2">Last</th>
+          <th class="col-2">Handle</th>
+          <th class="col-2">Handle</th>
+          <th class="col-2">Handle</th>
+          <th class="col-2">Handle</th>
+        </tr>
+      </tfoot> -->
+    </table>
+  </div>
+  <br /><br /><br /><br /><br />
+<div class="customTable col-sm-12">
+  <table class="table  table-bordered table-striped table-hover  appTableOverflow" >
+    <thead>
+      <tr>
+        <th class="col-sm-2">1</th>
+        <th class="col-sm-2">First name </th>
+        <th class="col-sm-2">Middle name</th>
+        <th class="col-sm-2">LAst name1</th>
+        <th class="col-sm-2">Address</th>
+        <th class="col-sm-2">City </th>
+        <th class="col-sm-2">Pin code </th>
+        <th class="col-sm-2">state</th>
+        <th class="col-sm-2">contry</th>
+        <th class="col-sm-2">mobile</th>
+        <th class="col-sm-2">phine </th>
+        <th class="col-sm-2">@fax</th>
+        <th class="col-sm-2">@sms</th>
+        <th class="col-sm-2">@email</th>
+      </tr>
+    </thead>
+    <tbody appTableOverflow>
+      <tr *ngFor="let i of [0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,2]">
+        <td class="col-sm-2">1</td>
+        <td class="col-sm-2">First name </td>
+        <td class="col-sm-2">Middle name</td>
+        <td class="col-sm-2">LAst name1</td>
+        <td class="col-sm-2">Address</td>
+        <td class="col-sm-2">City </td>
+        <td class="col-sm-2">Pin code </td>
+        <td class="col-sm-2">state</td>
+        <td class="col-sm-2">contry</td>
+        <td class="col-sm-2">mobile</td>
+        <td class="col-sm-2">phine </td>
+        <td class="col-sm-2">@fax</td>
+        <td class="col-sm-2">@sms</td>
+        <td class="col-sm-2">@email</td>
+      </tr>
+    </tbody>
+    <tfoot class="tableFooter">
+      <tr>
+        <th class="col-sm-2">1</th>
+        <th class="col-sm-2">First name </th>
+        <th class="col-sm-2">Middle name</th>
+        <th class="col-sm-2">LAst name1</th>
+        <th class="col-sm-2">Address</th>
+        <th class="col-sm-2">City </th>
+        <th class="col-sm-2">Pin code </th>
+        <th class="col-sm-2">state</th>
+        <th class="col-sm-2">contry</th>
+        <th class="col-sm-2">mobile</th>
+        <th class="col-sm-2">phine </th>
+        <th class="col-sm-2">@fax</th>
+        <th class="col-sm-2">@sms</th>
+        <th class="col-sm-2">@email</th>
+
+      </tr>
+    </tfoot>
+  </table>
+</div>
+<br /><br /><br /><br /><br />
+
+</div>

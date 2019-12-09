@@ -22,6 +22,8 @@ import { ActiveUsersComponent } from './user/active-users/active-users.component
 import { InactiveUsersComponent } from './user/inactive-users/inactive-users.component';
 import { ShoppingListService } from './shopping-list/shopping.service';
 import { RecipeService } from './recipes/recipe.service';
+import { CustomTableComponent } from './custom-table/custom-table.component';
+import { TableOverflowDirective } from './table-overflow.directive';
 
 
 
@@ -48,6 +50,8 @@ import { RecipeService } from './recipes/recipe.service';
     UserComponent,
     ActiveUsersComponent,
     InactiveUsersComponent,
+    CustomTableComponent,
+    TableOverflowDirective,
 
 
 
