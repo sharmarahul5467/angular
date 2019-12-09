@@ -47,28 +47,28 @@ export class CustomTableComponent implements OnInit {
     // console.log(event.target.parentNode.childNodes.length)
 
 
-    switch(event.target.parentNode.childNodes.length){
-      case 3 :
-                event.target.parentNode.childNodes[0].style.left = '-' + event.target.scrollLeft + 'px';
-                event.target.parentNode.childNodes[2].style.left = '-' + event.target.scrollLeft + 'px';
-                break;
-      case 2 :
-                event.target.parentNode.childNodes[0].style.left = '-' + event.target.scrollLeft + 'px';
-                break;
-    default:  ;
-    }
+    // switch(event.target.parentNode.childNodes.length){
+    //   case 3 :
+    //             event.target.parentNode.childNodes[0].style.left = '-' + event.target.scrollLeft + 'px';
+    //             event.target.parentNode.childNodes[2].style.left = '-' + event.target.scrollLeft + 'px';
+    //             break;
+    //   case 2 :
+    //             event.target.parentNode.childNodes[0].style.left = '-' + event.target.scrollLeft + 'px';
+    //             break;
+    // default:  ;
+    // }
 
-    event.target.parentNode.childNodes.forEach((element, key) => {
-      if (element.clientHeight < element.scrollHeight) {
-        console.dir(element);
-        console.log(element.localName + ' scroller  h ')
-        element.classList.add('scroller');
-      }
-      else {
-        console.log(element.localName + ' scroller nhi h ')
-        element.classList.remove('scroller');
-      }
-    });
+    // event.target.parentNode.childNodes.forEach((element, key) => {
+    //   if (element.clientHeight < element.scrollHeight) {
+    //     console.dir(element);
+    //     console.log(element.localName + ' scroller  h ')
+    //     element.classList.add('scroller');
+    //   }
+    //   else {
+    //     console.log(element.localName + ' scroller nhi h ')
+    //     element.classList.remove('scroller');
+    //   }
+    // });
     // console.dir(event.target.parentNode.childNodes[0].style.left)
     // event.target.parentNode.childNodes[0].clientLeft = event.target.scrollLeft ;
     // event.target.parentNode.childNodes[0].clientLeft = event.target.scrollLeft ;

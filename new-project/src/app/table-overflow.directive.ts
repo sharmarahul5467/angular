@@ -9,7 +9,7 @@ export class TableOverflowDirective implements OnInit, AfterViewInit, AfterConte
   constructor(private elRef: ElementRef) { }
   table = this.elRef.nativeElement;
   ngOnInit() {
-      // console.dir(this.table.childNodes)
+      console.dir(this.table.parentNode)
       // this.tableBodyScroll(this.table)
   }
 
@@ -30,7 +30,7 @@ export class TableOverflowDirective implements OnInit, AfterViewInit, AfterConte
 
 
   @HostListener('scroll', ['$event']) test(event: Event){
-    console.log(event)
+    // console.log(event)
     this.tableBodyScroll(event);
   }
 
