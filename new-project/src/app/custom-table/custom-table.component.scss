@@ -7,7 +7,7 @@
     width: 100%;
     &.scroller {
       tr {
-        margin-right: -15px;
+        margin-right: -16px;
       }
     }
 
@@ -62,4 +62,28 @@
   content: "";
   clear: both;
   display: block;
+}
+
+.table {
+  $border : 1px solid red ;
+  &.bordered{
+    border: $border;
+    thead {
+      tr{
+        td , th {
+          border-bottom:$border;
+          border-right: $border;
+        }
+      }
+    }
+      tbody {
+        tr{
+          td , th {
+            border-top:$border;
+            border-right: $border;
+          }
+        }
+      }
+
+  }
 }

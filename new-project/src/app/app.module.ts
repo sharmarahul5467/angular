@@ -23,7 +23,8 @@ import { InactiveUsersComponent } from './user/inactive-users/inactive-users.com
 import { ShoppingListService } from './shopping-list/shopping.service';
 import { RecipeService } from './recipes/recipe.service';
 import { CustomTableComponent } from './custom-table/custom-table.component';
-import { TableOverflowDirective } from './table-overflow.directive';
+import { TableOverflowDirective } from './shared/Directive/table-overflow.directive';
+import { TestDirectiveDirective } from './shared/Directive/test-directive.directive';
 
 
 
@@ -52,6 +53,7 @@ import { TableOverflowDirective } from './table-overflow.directive';
     InactiveUsersComponent,
     CustomTableComponent,
     TableOverflowDirective,
+    TestDirectiveDirective,
 
 
 
