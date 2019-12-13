@@ -5,13 +5,12 @@
     max-height: 500px;
     overflow: auto;
     width: 100%;
-    &.scroller {
-      tr {
-        margin-right: -16px;
       }
-    }
-
-  }
+      &.scroller {
+        tr {
+          margin-right: 16px;
+        }
+      }
 
   thead,
   tfoot,
@@ -87,3 +86,32 @@
 
   }
 }
+
+
+   .menu-navigation{
+        color:#000;
+        background:red;
+        text-align: center;
+        cursor: pointer;
+        transition:all ease 0.5s;
+
+        &.up{
+            &:hover{
+                transform:translateY(-20%);
+            }
+        }
+        &.down{
+            &:hover{
+                transform:translateY(20%);
+            }
+
+        }
+    }
+    .sideBarMenu{
+      max-height: 100px; overflow: auto; margin: 20px auto;
+      li{
+        padding: 20px;
+        margin-bottom: 10px;
+        
+      }
+    }

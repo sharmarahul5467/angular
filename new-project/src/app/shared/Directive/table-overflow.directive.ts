@@ -13,17 +13,18 @@ export class TableOverflowDirective implements OnInit, AfterViewInit, AfterConte
     // console.dir(this.table)
     // this.tableBodyScroll(this.table)
     console.log('init worked')
-    setTimeout(() => {
-      console.log('init setime out worked')
-      this.checkTable(this.table);
-    }, 2000)
+    // setTimeout(() => {
+    //   console.log('init setime out worked')
+    //   this.checkTable(this.table);
+    // }, 2000)
   }
 
 
 
 
   ngAfterViewInit() {
-
+    console.log('ngAfterViewInit from directive  worked')
+    this.checkTable(this.table);
 
   }
 
@@ -46,15 +47,21 @@ export class TableOverflowDirective implements OnInit, AfterViewInit, AfterConte
 
   checkTable(event: any) {
     console.dir(event)
+    console.dir(event.offsetParent.tHead.classList)
+    console.dir(event.offsetParent.tFoot.classList)
     console.log("function called")
     console.dir(event.clientHeight)
     console.dir(event.scrollHeight)
     if (event.clientHeight < event.scrollHeight) {
       console.log(event.localName + ' scroller  h ');
-      event.classList.add('scroller');
+      event.offsetParent.tHead.classList.add('scroller')
+      event.offsetParent.tFoot.classList.add('scroller')
+      // event.classList.add('scroller');
     } else {
       console.log(event.localName + ' scroller nhi h ')
-      event.classList.remove('scroller');
+      // event.classList.remove('scroller');
+      event.offsetParent.tHead.classList.remove('scroller')
+      event.offsetParent.tFoot.classList.remove('scroller')
     }
 
 
@@ -63,7 +70,7 @@ export class TableOverflowDirective implements OnInit, AfterViewInit, AfterConte
 
 
   tableBodyScroll(event) {
-    // console.log(event)
+    // console.log(event.clientHeight < event.scrollHeight);
 
     switch (event.target.parentNode.childNodes.length) {
       case 3:
@@ -81,11 +88,11 @@ export class TableOverflowDirective implements OnInit, AfterViewInit, AfterConte
       if (element.clientHeight < element.scrollHeight) {
         console.dir(element);
         console.log(element.localName + ' scroller  h ')
-        element.classList.add('scroller');
+        // element.classList.add('scroller');
       }
       else {
         console.log(element.localName + ' scroller nhi h ')
-        element.classList.remove('scroller');
+        // element.classList.remove('scroller');
       }
     });
 

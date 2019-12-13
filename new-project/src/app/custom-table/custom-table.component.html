@@ -1,4 +1,26 @@
 <div class="container">
+  <div class="scrollUpDown">
+      <div class="menu-navigation up"
+      (mouseenter)="menuScrollingStart('up')"
+      (mouseleave)="menuScrollingStop()"
+      *ngIf="scrollUp"
+      >
+          Up
+      </div>
+    <ol style=""  #sideBarMenu class="sideBarMenu" (scroll)="checkScrollPosition()">
+        <li *ngFor="let x of [0,0,00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]">
+          list 
+        </li>
+      </ol>
+      <div class="menu-navigation up" 
+      (mouseenter)="menuScrollingStart('down')"
+      (mouseleave)="menuScrollingStop()"
+      *ngIf="scrollDown"
+      >
+          down
+      </div>
+    </div>
+
   <h2>Bordered Table</h2>
 
 
@@ -77,14 +99,14 @@
         <th class="col-sm-2">LAst name1</th>
         <th class="col-sm-2">Address</th>
         <th class="col-sm-2">City </th>
-        <th class="col-sm-2">Pin code </th>
+        <!-- <th class="col-sm-2">Pin code </th>
         <th class="col-sm-2">state</th>
         <th class="col-sm-2">contry</th>
         <th class="col-sm-2">mobile</th>
         <th class="col-sm-2">phine </th>
         <th class="col-sm-2">@fax</th>
         <th class="col-sm-2">@sms</th>
-        <th class="col-sm-2">@email</th>
+        <th class="col-sm-2">@email</th> -->
       </tr>
     </thead>
     <tbody appTableOverflow>
@@ -95,14 +117,14 @@
         <td class="col-sm-2">LAst name1</td>
         <td class="col-sm-2">Address</td>
         <td class="col-sm-2">City </td>
-        <td class="col-sm-2">Pin code </td>
+        <!-- <td class="col-sm-2">Pin code </td>
         <td class="col-sm-2">state</td>
         <td class="col-sm-2">contry</td>
         <td class="col-sm-2">mobile</td>
         <td class="col-sm-2">phine </td>
         <td class="col-sm-2">@fax</td>
         <td class="col-sm-2">@sms</td>
-        <td class="col-sm-2">@email</td>
+        <td class="col-sm-2">@email</td> -->
       </tr>
     </tbody>
     <tfoot class="tableFooter">
@@ -113,14 +135,14 @@
         <th class="col-sm-2">LAst name1</th>
         <th class="col-sm-2">Address</th>
         <th class="col-sm-2">City </th>
-        <th class="col-sm-2">Pin code </th>
+        <!-- <th class="col-sm-2">Pin code </th>
         <th class="col-sm-2">state</th>
         <th class="col-sm-2">contry</th>
         <th class="col-sm-2">mobile</th>
         <th class="col-sm-2">phine </th>
         <th class="col-sm-2">@fax</th>
         <th class="col-sm-2">@sms</th>
-        <th class="col-sm-2">@email</th>
+        <th class="col-sm-2">@email</th> -->
 
       </tr>
     </tfoot>
@@ -128,4 +150,13 @@
 </div>
 <br /><br /><br /><br /><br />
 
+
+
+
 </div>
+
+
+
+
+
+
