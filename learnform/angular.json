@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "learing-app": {
+    "learnform": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/learing-app",
+            "outputPath": "dist/learnform",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -58,18 +58,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "learing-app:build"
+            "browserTarget": "learnform:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "learing-app:build:production"
+              "browserTarget": "learnform:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "learing-app:build"
+            "browserTarget": "learnform:build"
           }
         },
         "test": {
@@ -103,7 +103,7 @@
         }
       }
     },
-    "learing-app-e2e": {
+    "learnform-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -112,11 +112,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "learing-app:serve"
+            "devServerTarget": "learnform:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "learing-app:serve:production"
+              "devServerTarget": "learnform:serve:production"
             }
           }
         },
@@ -132,5 +132,5 @@
       }
     }
   },
-  "defaultProject": "learing-app"
+  "defaultProject": "learnform"
 }
